@@ -8,9 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
         shows.forEach(show => {
             const cardContainer = document.createElement('div');
             cardContainer.className = 'card-container';
-
+            cardContainer.setAttribute('data-aos', 'fade-right');
             const card = document.createElement('div');
             card.className = 'card';
+            
 
             const image = document.createElement('img');
             image.src = show.image ? show.image.medium : '';
